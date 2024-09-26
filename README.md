@@ -15,7 +15,7 @@ tl;dr: Makes a string into a smaller string and vice versa.
     const compressed = compress(longString);
     console.log(decompress(compressed));
 
-See [test](tests/basic-tests.mjs) for another example.
+See [test](tests/basic-tests.cjs) for another example.
 
 # Tests
 
