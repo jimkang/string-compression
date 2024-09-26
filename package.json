@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Takes a string, encodes it into binary, passes that to pako to get a compressed array, then converts that to a string that's smaller than the original string. Also does the reverse.",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "make test"
   },

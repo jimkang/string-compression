@@ -1,4 +1,4 @@
-import { compress, decompress } from '../index.js';
+import { compress, decompress } from '../index.mjs';
 import test from 'tape';
 
 test('Compress', compressTest);
