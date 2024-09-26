@@ -1,0 +1,30 @@
+{
+  "name": "string-compression",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Takes a string, encodes it into binary, passes that to pako to get a compressed array, then converts that to a string that's smaller than the original string. Also does the reverse.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/string-compression.git"
+  },
+  "keywords": [],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/string-compression/issues"
+  },
+  "homepage": "https://github.com/jimkang/string-compression",
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0",
+    "tape": "^5.9.0"
+  },
+  "dependencies": {
+    "js-base64": "^3.7.7",
+    "pako": "^2.1.0"
+  }
+}
