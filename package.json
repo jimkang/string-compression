@@ -1,7 +1,7 @@
 {
   "name": "string-compression",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Takes a string, encodes it into binary, passes that to pako to get a compressed array, then converts that to a string that's smaller than the original string. Also does the reverse.",
   "main": "index.mjs",
   "scripts": {
