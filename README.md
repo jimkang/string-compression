@@ -1,6 +1,6 @@
 # string-compression
 
-Takes a string, encodes it into binary, passes that to [pako](https://github.com/nodeca/pako/tree/master) to get a compressed array, then converts that to a string that's smaller than the original string. Also does the reverse.
+Takes a string, encodes it into binary, passes that to [pako](https://github.com/nodeca/pako/tree/master) to get a compressed array, then converts that to a string that's usually smaller than the original string. Also does the reverse.
 
 tl;dr: Makes a string into a smaller string and vice versa.
 
@@ -11,6 +11,11 @@ tl;dr: Makes a string into a smaller string and vice versa.
 # Usage
 
     import { compress, decompress } from 'string-compression';
+
+    const compressed = compress(longString);
+    console.log(decompress(compressed));
+
+See [test](tests/basic-tests.mjs) for another example.
 
 # Tests
 
