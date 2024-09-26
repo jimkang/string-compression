@@ -1,5 +1,5 @@
-import { compress, decompress } from '../index.mjs';
-import test from 'tape';
+var { compress, decompress } = require('../index.cjs');
+var test = require('tape');
 
 test('Compress', compressTest);
 test('Decompress', decompressTest);

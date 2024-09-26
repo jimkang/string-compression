@@ -1,7 +1,7 @@
-import pako from 'pako';
-import { fromUint8Array, toUint8Array } from 'js-base64';
+var pako = require('pako');
+var { fromUint8Array, toUint8Array } = require('js-base64');
 
-export function compress(input) {
+function compress(input) {
   // Encode from string to byte array.
   const data = new TextEncoder().encode(input);
   // console.log('Encoded uncompressed', data);
@@ -14,7 +14,7 @@ export function compress(input) {
   return fromUint8Array(compressedArray, true);
 }
 
-export function decompress(input) {
+function decompress(input) {
   // Convert from string to compressed byte array.
   const compressedStringConvertedToArray = toUint8Array(input);
   // Decompress byte array.
@@ -22,3 +22,5 @@ export function decompress(input) {
   // Decode array to string.
   return new TextDecoder().decode(decompressed);
 }
+
+module.exports = { compress, decompress };
